@@ -4,11 +4,10 @@ footer.footer {
   & .container {
     padding: 0;
   }
-}
-
-.row {
-  display: flex;
-  @include row(start, space-between);
+  & .row {
+    display: flex;
+    @include row(start, space-between);
+  }
 }
 
 .address * {
