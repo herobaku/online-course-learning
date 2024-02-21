@@ -30,7 +30,7 @@
   .banner__center {
     text-align: center;
     & a {
-      font-size: 14px;
+      font-size: clamp(10px, 3vw, 14px);
     }
     & i {
       padding-left: 12px;
@@ -42,15 +42,12 @@
   .banner {
     background: orange;
     margin: 0 16px;
-    padding: 10px 16px;
+    padding: 10px 5px;
     border-radius: 6px;
   }
 
   .banner__center {
     text-align: center;
-    & a {
-      font-size: 12px;
-    }
     & i {
       padding-left: 10px;
     }
