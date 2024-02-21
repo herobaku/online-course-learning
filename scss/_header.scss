@@ -1,6 +1,4 @@
 /* Header */
-/* 1440px , 1240px, 992px, 768px, 574px */
-
 header {
   padding: 16px 0;
 }
@@ -93,7 +91,23 @@ button.burger {
   }
 }
 
+@media screen and (max-width: 1860px) {
+  header .container {
+    max-width: 100%;
+    padding-inline: 132px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  header .container {
+    padding-inline: 100px;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  header .container {
+    padding-inline: 0;
+  }
   nav.nav {
     display: none;
   }

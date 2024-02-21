@@ -21,7 +21,7 @@ a {
 
 body {
   font-size: 1rem;
-  padding: 20px 0;
+  padding: 20px 15px;
   background: #f7f7f8;
 }
 
@@ -29,7 +29,6 @@ body {
   max-width: 1280px;
   width: 100%;
   margin: auto;
-  padding: 0 20px;
 }
 
 a.logo {
@@ -45,4 +44,83 @@ a.logo {
     object-fit: contain;
     padding: 3.4px;
   }
+}
+
+.section__title {
+  & h2 {
+    color: #262626;
+    font-size: 38px;
+    font-weight: 600;
+    padding-bottom: 4px;
+  }
+  &-desc {
+    display: flex;
+    @include row(flex-end, space-between);
+    & p {
+      color: #59595a;
+      font-size: 16px;
+      font-weight: 400;
+      max-width: 100%;
+      width: 933px;
+    }
+  }
+  &-button {
+    border: 1px solid #f1f1f3;
+    border-radius: 6px;
+    background: #fcfcfd;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+// @media screen and (max-width: 992px) {
+//   .section__title {
+//     & h2 {
+//       font-size: 38px;
+//     }
+//     &-desc {
+//       flex-direction: column;
+//       @include row(start, normal);
+//       row-gap: 20px;
+//       & p {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+@media screen and (max-width: 992px) {
+  .section__title {
+    & h2 {
+      font-size: 28px;
+    }
+    &-desc {
+      flex-direction: column;
+      @include row(start, normal);
+      row-gap: 20px;
+      & p {
+        color: #59595a;
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+      }
+    }
+    &-button {
+      border: 1px solid #f1f1f3;
+      border-radius: 6px;
+      background: #fcfcfd;
+      padding: 14px 20px;
+    }
+  }
+}
+
+.desc,
+.video,
+.benefits,
+.courses,
+.testimonials,
+.pricing,
+.questions {
+  margin-bottom: 100px;
 }
