@@ -1,0 +1,58 @@
+/* Banner */
+.banner {
+  background: orange;
+  margin: 0 20px;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.banner__center {
+  text-align: center;
+  & a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  & i {
+    padding-left: 30px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .banner {
+    background: orange;
+    margin: 0 16px;
+    padding: 10px 12px;
+    border-radius: 6px;
+  }
+
+  .banner__center {
+    text-align: center;
+    & a {
+      font-size: 14px;
+    }
+    & i {
+      padding-left: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .banner {
+    background: orange;
+    margin: 0 16px;
+    padding: 10px 16px;
+    border-radius: 6px;
+  }
+
+  .banner__center {
+    text-align: center;
+    & a {
+      font-size: 12px;
+    }
+    & i {
+      padding-left: 10px;
+    }
+  }
+}

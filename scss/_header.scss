@@ -1,0 +1,77 @@
+/* Header */
+/* 1440px , 1240px, 992px, 768px, 574px */
+
+header {
+  padding: 16px 0;
+}
+
+.row {
+  display: flex;
+  @include row(center, space-between);
+}
+
+.menu {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+
+a.logo {
+  width: 44px;
+  height: 44px;
+  padding: 5.7px;
+  background: orange;
+  border-radius: 8px;
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 3.4px;
+  }
+}
+
+nav.nav {
+  & ul.menu_list {
+    display: flex;
+    & li.menu_item {
+      padding-right: 5px;
+      &:last-child {
+        padding: 0;
+      }
+      & a.menu_link {
+        display: block;
+        padding: 12px 20px;
+        color: #262626;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 6px;
+        &.active {
+          background: #f1f1f3;
+        }
+        &:hover {
+          background: #f1f1f3;
+        }
+      }
+    }
+  }
+}
+
+.button__group {
+  & button.btn {
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+  }
+  & button.btn-success {
+    padding-inline: 24px;
+    background: #ff9500;
+    margin-left: 30px;
+    color: #fff;
+  }
+}
+
+button.burger {
+  width: 34px;
+  height: 34px;
+}
