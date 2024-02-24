@@ -1,8 +1,41 @@
-/*  */
+/* Sign */
+
+.account__info {
+  max-width: 100%;
+  width: 100%;
+  margin-right: 80px;
+  &-area {
+    margin-bottom: 60px;
+    &-title {
+      color: #262626;
+      font-size: 30px;
+      font-weight: 500;
+      padding-bottom: 4px;
+    }
+    &-subtitle {
+      color: #59595a;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  &-slider {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 10px;
+    &-icon {
+      width: 54px;
+      height: 54px;
+      background: #fff;
+    }
+  }
+}
 
 .account__area {
   background: #fff;
-  width: 540px;
+  max-width: calc(100% / 2.35);
+  width: 100%;
   border-radius: 10px;
   &-box {
     padding: 40px;
@@ -44,6 +77,12 @@
           border: 1px solid #4c4c4d;
           outline: 1px solid transparent;
         }
+      }
+      & .forget {
+        color: #4c4c4d;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: right;
       }
     }
     &-buttons {
@@ -151,8 +190,8 @@
         appearance: none;
         width: 24px;
         height: 24px;
-        background: #F7F7F8;
-        border: 1px solid #F1F1F3;
+        background: #f7f7f8;
+        border: 1px solid #f1f1f3;
         border-radius: 4px;
         padding: 5px;
         position: relative;
