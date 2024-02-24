@@ -1,0 +1,88 @@
+/* Courses About Begin */
+
+.courses__aboutPage {
+  margin-bottom: 180px;
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(613px, 1fr));
+    gap: 20px;
+  }
+}
+
+.courses__aboutPage-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  &-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    &-title {
+      color: #262626;
+      font-size: 60px;
+      font-weight: 700;
+      text-align: right;
+    }
+    &-subtitle {
+      color: #333333;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.6%;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      &-item {
+        border-radius: 6px;
+        display: flex;
+        @include row(center, space-between);
+        border: 1px solid #f1f1f3;
+        padding: 20px 24px;
+        transition: box-shadow 0.3s;
+        &:hover {
+          box-shadow: 0 0 0 4px #ffeacc;
+        }
+      }
+    }
+    &-left {
+      display: flex;
+      flex-direction: column;
+      &-title {
+        color: #333333;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      &-subtitle {
+        color: #59595a;
+        font-size: 14px;
+        font-weight: 400;
+        padding-top: 2px;
+      }
+    }
+    &-right {
+      &-button {
+        padding: 10px;
+        display: flex;
+        border-radius: 6px;
+        column-gap: 4px;
+        background: #f7f7f8;
+        align-items: center;
+        & .icon-clock {
+          width: 20px;
+          height: 20px;
+          background: url("../../images/Vector.svg") no-repeat center/cover;
+        }
+        & .icon {
+          display: block;
+          padding: 2.5px;
+        }
+        &.active {
+          background: #ffeacc;
+        }
+      }
+    }
+  }
+}
+
+/* Courses About End */
