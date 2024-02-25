@@ -56,10 +56,11 @@
 
 .container__ads {
   padding: 60px;
-  background: #ffffff url("../../images/shape.png") no-repeat 80% 50%/250px 250px;
+  background: #ffffff url("../../images/shape.png") no-repeat 80% 50%/250px
+    250px;
   &-title {
-    // max-width: min(100%, 757px);
-    width: 757px;
+    max-width: 757px;
+    width: 100%;
     & h2 {
       color: #262626;
       font-size: 38px;
@@ -87,3 +88,31 @@
     font-weight: 600;
   }
 }
+
+.container-card-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container-card-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .container__ads .row {
+    flex-direction: column;
+    align-items: start;
+    & h2 {
+      font-size: 28px;
+    }
+  }
+  .container__ads button.btn-orange {
+    margin-top: 40px;
+  }
+  .container__ads {
+    background: #ffffff url(../../images/shape.png) no-repeat 100% 205%/250px 250px;
+  }
+}
+

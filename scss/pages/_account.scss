@@ -225,3 +225,40 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .main-account .row {
+    row-gap: 50px;
+  }
+  .account__info {
+    max-width: 40%;
+  }
+  .account__area {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-account .row {
+    flex-direction: column;
+    align-items: normal;
+    row-gap: 50px;
+  }
+  .account__info {
+    max-width: 100%;
+    order: 2;
+  }
+  .account__area {
+    order: 1;
+    max-width: 100%;
+  }
+  .account__info-slider {
+    justify-content: center;
+  }
+  .account__area-box-title {
+    font-size: 28px;
+  }
+  .account__area-box-subtitle {
+    font-size: 14px;
+  }
+}
