@@ -43,13 +43,14 @@ nav.nav {
 .button__group {
   display: flex;
   align-items: center;
-  & button.btn {
+  & .btn {
     padding: 12px 0;
     font-size: 14px;
     font-weight: 400;
     border-radius: 6px;
+    color: #262626;
   }
-  & button.btn-success {
+  & .btn-success {
     padding-inline: 24px;
     background: #ff9500;
     margin-left: 30px;

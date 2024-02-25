@@ -1,0 +1,34 @@
+.video__poster {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  &-album {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #00000044;
+  }
+  & i {
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #ffffff4d;
+    border-radius: 68px;
+    background: #ffffff33;
+    color: #fff;
+    width: min(100%, 54px);
+    height: min(100%, 54px);
+    font-size: 1.8rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -4,5 +4,6 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true
-  }
+  },
+  "liveServer.settings.port": 5501
 }
